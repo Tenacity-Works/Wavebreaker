@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wavebreaker — 2D Fantasy Action-Survival Roguelite</title>
+  <meta name="description" content="Survive the fallen court and beyond in Wavebreaker—a fast-paced 2D fantasy action-survival roguelite featuring 8 unique champions, 40 awakening runes, and 4 handcrafted stages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-brand">
+        <span class="nav-star">✦</span>
+        <span>WAVEBREAKER</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Gameplay</a></li>
+        <li><a href="#champions">Champions</a></li>
+        <li><a href="#realms">Stages</a></li>
+        <li><a href="#systems">Progression</a></li>
+        <li><a href="#gallery">Screenshots</a></li>
+      </ul>
+      <a href="#play" class="nav-cta">Play Free</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="top">
+    <div class="hero-bg"></div>
+    <canvas id="hero-canvas"></canvas>
+
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">✦ 2D Action-Survival Roguelite  •  Windows Playtest</div>
+        <img src="assets/ui/logo-crest.png" alt="Wavebreaker" class="hero-crest" />
+        <p class="hero-tagline">Endure the endless tide. Awaken ancient runes. Break the siege until dawn.</p>
+        <p class="hero-desc">
+          Command eight distinct champions across four handcrafted fantasy realms. Aim freely or toggle instant lock-on Auto-Aim, weave through telegraphed boss arenas, bind and awaken signature weapon runes, and forge permanent strength between runs.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#" data-link="windows" target="_blank" rel="noopener" class="btn btn-primary">
+            ⬇ Download for Windows
+          </a>
+          <a href="#champions" class="btn btn-secondary">
+            Explore Champions
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-pill">
+            <strong>8</strong>
+            <span>Playable Heroes</span>
+          </div>
+          <div class="stat-pill">
+            <strong>40</strong>
+            <span>Awakening Runes</span>
+          </div>
+          <div class="stat-pill">
+            <strong>4</strong>
+            <span>15-Min Realms</span>
+          </div>
+          <div class="stat-pill">
+            <strong>Tier II</strong>
+            <span>Meta Power-Ups</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-showcase-card">
+        <div class="cover-frame-inner">
+          <img src="assets/ui/cover-square.jpg?v=3" alt="Wavebreaker Cover Art featuring Auren" />
+        </div>
+        <!-- Ornate Royal Gold & Frostfire Filigree Corners -->
+        <svg class="frame-corner corner-tl" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M2 58 V14 L14 2 H58" fill="none" stroke="#ffd978" stroke-width="2.4"/>
+          <path d="M9 46 V18 L18 9 H46" fill="none" stroke="#f7cf5c" stroke-width="1.3" opacity="0.85"/>
+          <polygon points="14,6 20,12 14,18 8,12" fill="#ffe8a3" stroke="#061224" stroke-width="1.2"/>
+          <polygon points="14,9.5 16.5,12 14,14.5 11.5,12" fill="#68d8ff"/>
+        </svg>
+        <svg class="frame-corner corner-tr" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M2 58 V14 L14 2 H58" fill="none" stroke="#ffd978" stroke-width="2.4"/>
+          <path d="M9 46 V18 L18 9 H46" fill="none" stroke="#f7cf5c" stroke-width="1.3" opacity="0.85"/>
+          <polygon points="14,6 20,12 14,18 8,12" fill="#ffe8a3" stroke="#061224" stroke-width="1.2"/>
+          <polygon points="14,9.5 16.5,12 14,14.5 11.5,12" fill="#68d8ff"/>
+        </svg>
+        <svg class="frame-corner corner-bl" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M2 58 V14 L14 2 H58" fill="none" stroke="#ffd978" stroke-width="2.4"/>
+          <path d="M9 46 V18 L18 9 H46" fill="none" stroke="#f7cf5c" stroke-width="1.3" opacity="0.85"/>
+          <polygon points="14,6 20,12 14,18 8,12" fill="#ffe8a3" stroke="#061224" stroke-width="1.2"/>
+          <polygon points="14,9.5 16.5,12 14,14.5 11.5,12" fill="#68d8ff"/>
+        </svg>
+        <svg class="frame-corner corner-br" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M2 58 V14 L14 2 H58" fill="none" stroke="#ffd978" stroke-width="2.4"/>
+          <path d="M9 46 V18 L18 9 H46" fill="none" stroke="#f7cf5c" stroke-width="1.3" opacity="0.85"/>
+          <polygon points="14,6 20,12 14,18 8,12" fill="#ffe8a3" stroke="#061224" stroke-width="1.2"/>
+          <polygon points="14,9.5 16.5,12 14,14.5 11.5,12" fill="#68d8ff"/>
+        </svg>
+        <span class="frame-gem gem-top" aria-hidden="true">✦</span>
+        <span class="frame-gem gem-bottom" aria-hidden="true">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gameplay Pillars -->
+  <section class="pillars-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Core Combat Loop</div>
+        <h2 class="section-title">Active Skill Meets Relentless Horde Survival</h2>
+        <div class="section-divider">✦</div>
+        <p class="section-subtitle">
+          Every champion brings bespoke weapon physics, active Ultimates, and build-defining runes—never mere reskins sharing the same projectile pool.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <article class="pillar-card">
+          <div class="pillar-icon">⚔</div>
+          <h3>Precision or Auto-Aim</h3>
+          <p>Aim twin-stick style with a high-contrast reticle, or press <strong>F</strong> at any moment to lock onto the nearest threat and focus purely on footwork and positioning.</p>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-icon">✦</div>
+          <h3>Rune Binding &amp; Awakening</h3>
+          <p>Bind two signature Weapon Runes at Levels 10 and 25, then <strong>Awaken</strong> their true forms at Levels 50 and 80—turning arrows into boomerangs or blizzards into projectile shields.</p>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-icon">⚡</div>
+          <h3>Illustrated Ultimates</h3>
+          <p>Fill your Mana through combat to trigger a dramatic cut-in splash and unleash game-turning Ultimates: dragon-blade whirlwinds, devouring soul rituals, and ramping lightning storms.</p>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-icon">👑</div>
+          <h3>Telegraphed Boss Sieges</h3>
+          <p>Break 4-minute encirclement rings, outmaneuver elite champions, and survive 13-minute Final Bosses armed with telegraphed line charges, arcane circles, and ground slams.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Champions Showcase -->
+  <section class="champions-section" id="champions">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Choose Your Champion</div>
+        <h2 class="section-title">Eight Heroes, Eight Ways to Conquer</h2>
+        <div class="section-divider">✦</div>
+        <p class="section-subtitle">
+          Select a champion below to inspect their weapon, passive, Ultimate cut-in artwork, and all five exclusive Weapon Runes.
+        </p>
+      </div>
+
+      <div class="roster-tabs" id="roster-tabs"></div>
+
+      <div class="champion-stage">
+        <div class="champion-visual-panel" id="champion-visual-panel">
+          <img id="champion-pose-img" class="champion-art-pose" src="assets/heroes/auren.png" alt="Auren" />
+          <img id="champion-ult-img" class="champion-art-ult" src="assets/ultimates/auren-ult.jpg" alt="Auren Ultimate" />
+
+          <div class="visual-mode-toggle">
+            <span class="unlock-tag" id="champion-unlock">Starter Champion</span>
+            <div class="mode-switch-btns">
+              <button type="button" class="mode-btn active" id="mode-pose-btn">Battle Pose</button>
+              <button type="button" class="mode-btn" id="mode-ult-btn">Ultimate Art</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="champion-details">
+          <div class="champion-info-header">
+            <h3 class="champion-name" id="champion-name">Auren</h3>
+          </div>
+          <div class="champion-weapon" id="champion-weapon">Unique Weapon  •  Winter's Requiem</div>
+
+          <div class="kit-grid">
+            <div class="kit-box">
+              <span class="kit-label">Passive Ability</span>
+              <strong class="kit-title" id="passive-title">Frostfire</strong>
+              <p class="kit-desc" id="passive-desc"></p>
+            </div>
+            <div class="kit-box">
+              <span class="kit-label">Ultimate (100 Mana)</span>
+              <strong class="kit-title" id="ult-title">Iceflame (12s)</strong>
+              <p class="kit-desc" id="ult-desc"></p>
+            </div>
+          </div>
+
+          <div class="runes-header">
+            <h4>Signature Weapon Runes (5)</h4>
+            <button type="button" class="awaken-toggle" id="awaken-toggle">✦ Preview Awakening</button>
+          </div>
+          <div class="runes-list" id="runes-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Four Stages Section -->
+  <section id="realms">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Four 15-Minute Battlegrounds</div>
+        <h2 class="section-title">Survive One Realm to Unlock the Next</h2>
+        <div class="section-divider">✦</div>
+        <p class="section-subtitle">
+          Endure all fifteen minutes in a battleground to earn its permanent <strong>CLEARED</strong> badge and open the path forward for your entire roster.
+        </p>
+      </div>
+
+      <div class="stages-grid">
+        <article class="stage-card">
+          <div class="stage-img-wrap">
+            <img src="assets/stages/court.jpg" alt="Court of the Prince" loading="lazy" />
+            <span class="stage-num-badge">STAGE I</span>
+            <span class="stage-boss-badge">Boss: The Frozen Sovereign</span>
+          </div>
+          <div class="stage-body">
+            <div class="stage-unlock">Available from the Start</div>
+            <h3>Court of the Prince</h3>
+            <p>Cross moonlit gothic ruins, dark ponds, and pine clearings while holding off the Undead Royal Legion—spear-throwing guards, frost knights, and armored Knight Commanders.</p>
+          </div>
+        </article>
+
+        <article class="stage-card">
+          <div class="stage-img-wrap">
+            <img src="assets/stages/forest.jpg" alt="Verdant Wilds" loading="lazy" />
+            <span class="stage-num-badge">STAGE II</span>
+            <span class="stage-boss-badge">Boss: The Warchief</span>
+          </div>
+          <div class="stage-body">
+            <div class="stage-unlock">Unlock: Survive 15m in Court of the Prince</div>
+            <h3>Verdant Wilds</h3>
+            <p>Navigate sunlit emerald clearings and ancient moss-draped trees swarming with goblin scouts, slingers, hex-casting shamans, and towering Brute Champions.</p>
+          </div>
+        </article>
+
+        <article class="stage-card">
+          <div class="stage-img-wrap">
+            <img src="assets/stages/frostpalm.jpg" alt="Frostpalm Reach" loading="lazy" />
+            <span class="stage-num-badge">STAGE III</span>
+            <span class="stage-boss-badge">Boss: The Frost King</span>
+          </div>
+          <div class="stage-body">
+            <div class="stage-unlock">Unlock: Survive 15m in Verdant Wilds  •  Unlocks Tier II Power-Ups</div>
+            <h3>Frostpalm Reach</h3>
+            <p>Follow snow-swept roads around eight frozen oasis lakes where ice golems, frost wolves, snow sorcerers, and yeti brutes guard the Frost King's domain.</p>
+          </div>
+        </article>
+
+        <article class="stage-card">
+          <div class="stage-img-wrap">
+            <img src="assets/stages/temple.jpg" alt="Celestial Sanctum" loading="lazy" />
+            <span class="stage-num-badge">STAGE IV</span>
+            <span class="stage-boss-badge">Boss: The Empyrean Archon</span>
+          </div>
+          <div class="stage-body">
+            <div class="stage-unlock">Unlock: Survive 15m in Frostpalm Reach</div>
+            <h3>Celestial Sanctum</h3>
+            <p>Ascend into golden marble courtyards framed by winged angel statues and cascading waterfalls to face astral hippogriffs, oracle priests, pegasus lancers, and the Archon.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta Progression & Consumables -->
+  <section class="systems-section" id="systems">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Depth &amp; Replayability</div>
+        <h2 class="section-title">Tier II Power-Ups, Rerolls &amp; Battlefield Drops</h2>
+        <div class="section-divider">✦</div>
+        <p class="section-subtitle">
+          Bank gold from every run—win or fall—to unlock new champions, expand permanent attributes up to Rank 10 after conquering Frostpalm Reach, toggle individual buffs freely, or refund your treasury anytime.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <article class="pillar-card">
+          <div class="pillar-icon">📈</div>
+          <h3>Tier I &amp; II Treasury</h3>
+          <p>Invest gold across 12 core attributes, unlocking Ranks 6–10 upon clearing Frostpalm Reach, with full free <strong>Refund All</strong> and per-stat checkboxes.</p>
+        </article>
+        <article class="pillar-card">
+          <div class="pillar-icon">🎲</div>
+          <h3>Rarity Odds &amp; Rerolls</h3>
+          <p>Scale Luck to roll Rare, Epic, and 200%-potency Mythical level-up cards—and spend <strong>Rerolls (R)</strong> to hunt down your ideal build.</p>
+        </article>
+        <article class="pillar-card">
+          <div class="pillar-icon">☀</div>
+          <h3>Radiant Revival</h3>
+          <p>Unlock Revival to choose a second wind upon falling, erupting in a golden light shockwave at 50% HP with 3 seconds of invulnerability.</p>
+        </article>
+        <article class="pillar-card">
+          <div class="pillar-icon">🗺</div>
+          <h3>Tactical Full Map</h3>
+          <p>Pause at any time with <strong>M</strong> to chart Silver (+1 Level) and Bronze treasure caches across the arena, or hold <strong>Tab</strong> to inspect live stats and Ultimates.</p>
+        </article>
+      </div>
+
+      <div class="consumables-row">
+        <div class="consumable-card">
+          <img src="assets/ui/ice-cream.png" alt="Ice Cream Consumable" />
+          <div>
+            <h4>Ice Cream</h4>
+            <p>Rare enemy drop that immediately restores <strong>30% of Maximum Health</strong> in a burst of emerald light.</p>
+          </div>
+        </div>
+        <div class="consumable-card">
+          <img src="assets/ui/magnet.png" alt="Magnet Consumable" />
+          <div>
+            <h4>Arcane Magnet</h4>
+            <p>Pulses across the battlefield, pulling <strong>every XP shard and gold coin on the entire map</strong> straight to you.</p>
+          </div>
+        </div>
+        <div class="consumable-card">
+          <img src="assets/ui/bomb.png" alt="Bomb Consumable" />
+          <div>
+            <h4>Siege Bomb</h4>
+            <p>Unleashes a fiery shockwave that <strong>instantly obliterates all regular enemies on screen</strong> (sparing bosses &amp; elites).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots Gallery -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">In-Game Captures</div>
+        <h2 class="section-title">Glimpses From the Vigil</h2>
+        <div class="section-divider">✦</div>
+        <p class="section-subtitle">Click any screenshot to view full size.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="assets/screenshots/menu-live.jpg" alt="Animated Main Menu" loading="lazy" />
+          <div class="gallery-caption">Animated 4-Realm Main Menu</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/screenshots/celestial-combat.jpg" alt="Celestial Sanctum Hordes" loading="lazy" />
+          <div class="gallery-caption">Celestial Sanctum  •  Late-Wave Siege</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/screenshots/frostpalm-combat.jpg" alt="Frostpalm Reach Hordes" loading="lazy" />
+          <div class="gallery-caption">Frostpalm Reach  •  Frozen Oasis Battle</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/screenshots/danny-storm.jpg" alt="Danny God of Lightning" loading="lazy" />
+          <div class="gallery-caption">Danny  •  God of Lightning Channel</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/screenshots/elys-sunfire.jpg" alt="Elys Scorched Earth" loading="lazy" />
+          <div class="gallery-caption">Elys  •  Wrath of the Sun &amp; Scorched Earth</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/screenshots/cyrene-blizzard.jpg" alt="Cyrene Absolute Zero" loading="lazy" />
+          <div class="gallery-caption">Cyrene  •  Absolute Zero Blizzard</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Play / Download Call to Action -->
+  <section id="play">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="section-kicker">Playtest Build Available Now</div>
+        <h2>Ready to Break the Wave?</h2>
+        <p>
+          Download the standalone Windows `.zip`, extract the folder, and launch <code>Wavebreaker.exe</code>—no Unity installation required.
+        </p>
+        <div class="cta-buttons">
+          <a href="#" data-link="windows" target="_blank" rel="noopener" class="btn btn-primary">
+            ⬇ Download Windows Playtest (.zip)
+          </a>
+          <a href="#" data-link="github" target="_blank" rel="noopener" class="btn btn-secondary">
+            View GitHub Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>WAVEBREAKER</strong>  •  Developed &amp; Published by <strong>TenacityWorks</strong>  •  Built in Unity 6</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="" />
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script src="script.js?v=2"></script>
+</body>
+</html>

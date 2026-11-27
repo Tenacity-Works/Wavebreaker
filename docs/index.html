@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wavebreaker — 2D Fantasy Action-Survival Roguelite</title>
-  <meta name="description" content="Survive the fallen court and beyond in Wavebreaker—a fast-paced 2D fantasy action-survival roguelite featuring 8 unique champions, 40 awakening runes, and 4 handcrafted stages." />
+  <meta name="description" content="Survive the fallen court and beyond in Wavebreaker—a fast-paced 2D fantasy action-survival roguelite featuring 8 unique champions, 40 awakening runes, and 5 handcrafted stages, including the haunted Mourning Hollow." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=20261127" />
 </head>
 <body>
 
@@ -25,6 +25,7 @@
         <li><a href="#realms">Stages</a></li>
         <li><a href="#systems">Progression</a></li>
         <li><a href="#gallery">Screenshots</a></li>
+        <li><a href="#updates">Updates</a></li>
       </ul>
       <a href="#play" class="nav-cta">Play Free</a>
     </div>
@@ -41,15 +42,15 @@
         <img src="assets/ui/logo-crest.png" alt="Wavebreaker" class="hero-crest" />
         <p class="hero-tagline">Endure the endless tide. Awaken ancient runes. Break the siege until dawn.</p>
         <p class="hero-desc">
-          Command eight distinct champions across four handcrafted fantasy realms. Aim freely or toggle instant lock-on Auto-Aim, weave through telegraphed boss arenas, bind and awaken signature weapon runes, and forge permanent strength between runs.
+          Command eight distinct champions across five handcrafted fantasy realms. Aim freely or toggle instant lock-on Auto-Aim, weave through telegraphed boss arenas, bind and awaken signature weapon runes, and forge permanent strength between runs.
         </p>
 
         <div class="hero-actions">
           <a href="#" data-link="windows" target="_blank" rel="noopener" class="btn btn-primary">
             ⬇ Download for Windows
           </a>
-          <a href="#champions" class="btn btn-secondary">
-            Explore Champions
+          <a href="https://tenacityworks.itch.io/wavebreaker" data-link="itch" target="_blank" rel="noopener" class="btn btn-secondary">
+            Play in Browser
           </a>
         </div>
 
@@ -63,7 +64,7 @@
             <span>Awakening Runes</span>
           </div>
           <div class="stat-pill">
-            <strong>4</strong>
+            <strong>5</strong>
             <span>15-Min Realms</span>
           </div>
           <div class="stat-pill">
@@ -136,7 +137,7 @@
         <article class="pillar-card">
           <div class="pillar-icon">⚡</div>
           <h3>Illustrated Ultimates</h3>
-          <p>Fill your Mana through combat to trigger a dramatic cut-in splash and unleash game-turning Ultimates: dragon-blade whirlwinds, devouring soul rituals, and ramping lightning storms.</p>
+          <p>Fill your Mana to unleash dragon-blade whirlwinds, soul rituals, and lightning storms. Every ultimate has a <strong>3-second recast cooldown</strong>. Press <strong>R</strong> during gameplay to toggle splash animations on or off.</p>
         </article>
 
         <article class="pillar-card">
@@ -189,7 +190,7 @@
               <p class="kit-desc" id="passive-desc"></p>
             </div>
             <div class="kit-box">
-              <span class="kit-label">Ultimate (100 Mana)</span>
+              <span class="kit-label">Ultimate · 100 Mana · 3s recast cooldown</span>
               <strong class="kit-title" id="ult-title">Iceflame (12s)</strong>
               <p class="kit-desc" id="ult-desc"></p>
             </div>
@@ -205,11 +206,11 @@
     </div>
   </section>
 
-  <!-- Four Stages Section -->
+  <!-- Five Stages Section -->
   <section id="realms">
     <div class="container">
       <div class="section-header">
-        <div class="section-kicker">Four 15-Minute Battlegrounds</div>
+        <div class="section-kicker">Five 15-Minute Battlegrounds</div>
         <h2 class="section-title">Survive One Realm to Unlock the Next</h2>
         <div class="section-divider">✦</div>
         <p class="section-subtitle">
@@ -269,6 +270,19 @@
             <p>Ascend into golden marble courtyards framed by winged angel statues and cascading waterfalls to face astral hippogriffs, oracle priests, pegasus lancers, and the Archon.</p>
           </div>
         </article>
+
+        <article class="stage-card stage-featured">
+          <div class="stage-img-wrap">
+            <img src="assets/stages/graveyard.jpg" alt="Mourning Hollow: haunted graves and dead trees" loading="lazy" />
+            <span class="stage-num-badge">STAGE V</span>
+            <span class="stage-boss-badge">Boss: The Sepulchral King</span>
+          </div>
+          <div class="stage-body">
+            <div class="stage-unlock">Unlock: Survive 15m in Celestial Sanctum</div>
+            <h3>Mourning Hollow</h3>
+            <p>Venture beyond the Sanctum into a haunted graveyard of tombstones, twisted dead trees, and drifting mist. Zombies, skeleton guards, ranged Gravecallers, floating skulls, and bone beasts hunt through the dark. Frequent minibosses make this the hardest realm yet.</p>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -304,7 +318,7 @@
         <article class="pillar-card">
           <div class="pillar-icon">🗺</div>
           <h3>Tactical Full Map</h3>
-          <p>Pause at any time with <strong>M</strong> to chart Silver (+1 Level) and Bronze treasure caches across the arena, or hold <strong>Tab</strong> to inspect live stats and Ultimates.</p>
+          <p>Pause at any time with <strong>M</strong> to chart Silver (+1 Level) and Bronze treasure caches across the arena, or toggle <strong>Tab</strong> to inspect stats and Ultimate details—even during level-up, rune, and awakening choices.</p>
         </article>
       </div>
 
@@ -320,7 +334,7 @@
           <img src="assets/ui/magnet.png" alt="Magnet Consumable" />
           <div>
             <h4>Arcane Magnet</h4>
-            <p>Pulses across the battlefield, pulling <strong>every XP shard and gold coin on the entire map</strong> straight to you.</p>
+            <p>Pulses across the battlefield, pulling <strong>every XP shard and gold coin on the entire map</strong> straight to you. XP is awarded as the shards arrive, so the XP bar fills along with the pull.</p>
           </div>
         </div>
         <div class="consumable-card">
@@ -345,9 +359,13 @@
       </div>
 
       <div class="gallery-grid">
+        <div class="gallery-item"><img src="assets/screenshots/mourning-hollow.jpg" alt="Undead and bone beasts in Mourning Hollow" loading="lazy" /><div class="gallery-caption">Mourning Hollow · The Undead Legion</div></div>
+        <div class="gallery-item"><img src="assets/screenshots/chiori-swing.jpg" alt="Chiori’s 200-degree katana sweep" loading="lazy" /><div class="gallery-caption">Chiori · Body-Centered Katana Sweep</div></div>
+        <div class="gallery-item"><img src="assets/screenshots/hypothermia.jpg" alt="Five blue Hypothermia orbs beneath Cyrene’s Mana bar" loading="lazy" /><div class="gallery-caption">Cyrene · Five Hypothermia Orbs</div></div>
+
         <div class="gallery-item">
           <img src="assets/screenshots/menu-live.jpg" alt="Animated Main Menu" loading="lazy" />
-          <div class="gallery-caption">Animated 4-Realm Main Menu</div>
+          <div class="gallery-caption">Animated Main Menu</div>
         </div>
         <div class="gallery-item">
           <img src="assets/screenshots/celestial-combat.jpg" alt="Celestial Sanctum Hordes" loading="lazy" />
@@ -373,6 +391,37 @@
     </div>
   </section>
 
+
+  <section class="systems-section" id="updates">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Development Update · 27 November 2026</div>
+        <h2 class="section-title">Beyond the Sanctum</h2>
+        <div class="section-divider">✦</div>
+        <p class="section-subtitle">Recent development changes for v0.1.1. Downloadable builds are published separately on <a href="https://github.com/Tenacity-Works/Wavebreaker/releases">GitHub Releases</a>; check the release notes for what is included in each build.</p>
+      </div>
+      <div class="pillars-grid">
+        <article class="pillar-card"><div class="pillar-icon">☾</div><h3>A Fifth Realm</h3><p>Mourning Hollow brings undead hordes, necromancers, bone beasts, frequent minibosses, and the Sepulchral King. Smaller green projectiles leave more room to dodge. Court of the Prince also receives richer terrain and repaired map joins.</p></article>
+        <article class="pillar-card"><div class="pillar-icon">⚔</div><h3>Sharper Combat</h3><p>Caraxx’s continuous spin strikes 2.5 times per second at base Attack Speed. Danny’s ultimate ramp stops at +45%. All ultimates have a 3-second recast cooldown; R toggles their splash animations.</p></article>
+        <article class="pillar-card"><div class="pillar-icon">✿</div><h3>Clearer Character Effects</h3><p>Refreshed character poses, a seamless Caraxx spin, visible Windguard and Living Circuit shields, and stable Elys auras. Chiori’s body-centered 200-degree slash now follows her as she moves.</p></article>
+        <article class="pillar-card"><div class="pillar-icon">✦</div><h3>More Readable Builds</h3><p>Five blue Hypothermia orbs track Cyrene’s overflow Mana. Radiant Presence ticks four times per second. Common Damage upgrades grant +7.5 damage, Tier II prices grow more gently, and Tab remains available during upgrade choices.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="controls">
+    <div class="container">
+      <div class="section-header"><div class="section-kicker">Know Your Controls</div><h2 class="section-title">Aim. Move. Break Through.</h2><div class="section-divider">✦</div><p class="section-subtitle">Default bindings. Gameplay controls can be rebound in Options.</p></div>
+      <dl class="controls-grid">
+        <div><dt>W A S D</dt><dd>Move</dd></div><div><dt>Left Mouse</dt><dd>Aim and attack; hold to channel Danny’s lightning</dd></div>
+        <div><dt>Right Mouse</dt><dd>Chiori’s cursor-directed dash</dd></div><div><dt>E</dt><dd>Ultimate at 100 Mana; 3-second recast cooldown</dd></div>
+        <div><dt>F</dt><dd>Toggle Auto-Aim</dd></div><div><dt>R</dt><dd>Toggle ultimate splash skipping during play; reroll during choices</dd></div>
+        <div><dt>Tab</dt><dd>Toggle stats and ultimate details, including during upgrade choices</dd></div><div><dt>1 / 2 / 3</dt><dd>Select an upgrade or rune</dd></div>
+        <div><dt>M / Escape</dt><dd>Map / pause or back</dd></div><div><dt>N / F11</dt><dd>Mute / toggle fullscreen in the Windows player</dd></div>
+      </dl>
+    </div>
+  </section>
+
   <!-- Play / Download Call to Action -->
   <section id="play">
     <div class="container">
@@ -389,6 +438,7 @@
           <a href="#" data-link="github" target="_blank" rel="noopener" class="btn btn-secondary">
             View GitHub Repository
           </a>
+          <a href="https://tenacityworks.itch.io/wavebreaker" data-link="itch" target="_blank" rel="noopener" class="btn btn-secondary">Play on itch.io</a>
         </div>
       </div>
     </div>
@@ -397,6 +447,7 @@
   <footer class="site-footer">
     <div class="container">
       <p><strong>WAVEBREAKER</strong>  •  Developed &amp; Published by <strong>TenacityWorks</strong>  •  Built in Unity 6</p>
+      <p><a href="https://github.com/Tenacity-Works/Wavebreaker">GitHub</a> · <a href="https://github.com/Tenacity-Works/Wavebreaker/releases">Downloads &amp; release notes</a> · <a href="https://tenacityworks.itch.io/wavebreaker">itch.io</a></p>
     </div>
   </footer>
 
@@ -409,6 +460,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=20261127"></script>
 </body>
 </html>
